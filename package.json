@@ -1,12 +1,13 @@
 {
-  "name": "Builderz-Solana-dApp-Scaffold",
+  "name": "builderz-xnft-scaffold-next",
   "version": "1.0",
   "private": true,
   "scripts": {
-    "dev": "next dev",
+    "dev": "next dev --port 9933",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "bundle": "yarn build && npx xnft bundle"
   },
   "dependencies": {
     "@emotion/react": "^11.10.5",
