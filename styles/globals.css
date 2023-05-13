@@ -68,7 +68,7 @@ body {
 }
 
 h1 {
-  font-size: calc(30px + (36 - 30) * ((100vw - 320px) / (1280 - 320)));
+  font-size: calc(30px + (36 - 24) * ((100vw - 320px) / (1280 - 320)));
   font-style: normal;
   font-weight: 900;
   letter-spacing: 125%;

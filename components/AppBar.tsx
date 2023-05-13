@@ -18,7 +18,7 @@ export default function PrimarySearchAppBar({ setTheme }: any) {
   return (
     <Box sx={{ flexGrow: 1 }} className="w-full">
       <AppBar
-        position="static" color="transparent" className="w-ful justify-between" elevation={0}
+        position="static" className="w-ful justify-between b" elevation={0}
         sx={{
           paddingTop: 2,
           paddingBottom: 2,

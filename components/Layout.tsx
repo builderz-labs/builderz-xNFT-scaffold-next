@@ -8,13 +8,13 @@ const MyMain = styled.main``;
 
 const Layout = ({ children }: { children: ReactNode }) => {
   return (
-    <div className="h-screen w-screen max-w-[425px] flex flex-col">
+    <div className="h-screen w-full flex flex-col">
       <Header />
       {/* Set background color here */}
       <MyMain className="flex-1 text-black bg-white">
         {children}
       </MyMain>
-      <div className="fixed bottom-0 w-full max-w-[425px]">
+      <div className="fixed bottom-0 w-full ">
         <Tabs />
         {/* <div className="flex flex-row items-center justify-center gap-2 text-[8px] font-light py-2 bg-black">
           <p>Powered by</p>
