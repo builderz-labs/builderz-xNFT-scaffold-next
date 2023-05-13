@@ -1,8 +1,8 @@
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
-import BrandW from "../public/images/builderz-logo2.png";
-import Brand from "../public/images/builderz-logo2-b.png";
+import BrandW from "../public/builderz-black.svg";
+import Brand from "../public/images/builderz-white.svg";
 
 import { useTheme } from "@mui/material";
 

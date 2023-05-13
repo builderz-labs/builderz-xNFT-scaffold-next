@@ -3,6 +3,7 @@ import { FaChevronLeft } from 'react-icons/fa';
 import styled from 'styled-components';
 import Image from 'next/image';
 import { useRouter } from 'next/router';
+import { Logo } from './Logo';
 
 const basePaths = ['/']; // Add more paths here if needed
 
@@ -19,11 +20,7 @@ export default function Header() {
     }
     return (
       <div className="flex items-center">
-        <Image className="mr-2" src='/renaissance-logo-no-padding.svg' height={28} width={28} alt="logo" />
-        <p className='text-white'>
-          re<span className="text-[#FF8A57]">:</span>
-          <span className="lowercase">naissance</span>
-        </p>
+        <Logo />
       </div>
     );
   }, [router.pathname]);
