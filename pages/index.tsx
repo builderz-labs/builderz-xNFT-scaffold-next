@@ -60,10 +60,10 @@ const Home: NextPage = () => {
               <b>Builderz Solana dApp Scaffold</b>
             </p>
             <div className="flex flex-row gap-4 justify-around  items-center py-8">
-              <button onClick={notify} className="btn glow-on-hover">
+              <button onClick={notify} className="btn ">
                 Notify!
               </button>
-              <WalletMultiButtonDynamic className="btn glow" />
+              <WalletMultiButtonDynamic />
             </div>
           </div>
         </div>
