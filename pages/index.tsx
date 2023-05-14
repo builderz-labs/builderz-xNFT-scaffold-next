@@ -1,20 +1,11 @@
 import type { NextPage } from "next";
-import dynamic from "next/dynamic";
 import Image from "next/image";
 import styles from "../styles/Home.module.css";
 import { toast } from "react-toastify";
 import Head from "next/head";
 
-// Default styles that can be overridden by your app
-require("@solana/wallet-adapter-react-ui/styles.css");
-
 import "react-toastify/dist/ReactToastify.css";
 
-const WalletMultiButtonDynamic = dynamic(
-  async () =>
-    (await import("@solana/wallet-adapter-react-ui")).WalletMultiButton,
-  { ssr: false }
-);
 
 const Home: NextPage = () => {
   const notify = () =>
@@ -23,7 +14,7 @@ const Home: NextPage = () => {
   return (
     <>
       <Head>
-        <title>Builderz Solana dApp Scaffold</title>
+        <title>Builderz xNFT Scaffold</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <div className={styles.container}>
@@ -57,13 +48,12 @@ const Home: NextPage = () => {
             <h1 className={styles.h1}>Hello Solana, meet Builderz 👋</h1>
             <p className={styles.explain}>
               Explore what you can do with Builderz&rsquo; brand new{" "}
-              <b>Builderz Solana dApp Scaffold</b>
+              <b>Builderz xNFT Scaffold</b>
             </p>
             <div className="flex flex-row gap-4 justify-around  items-center py-8">
               <button onClick={notify} className="btn ">
                 Notify!
               </button>
-              <WalletMultiButtonDynamic />
             </div>
           </div>
         </div>
