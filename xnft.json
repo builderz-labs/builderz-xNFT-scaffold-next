@@ -19,7 +19,7 @@
   ],
   "entrypoints": {
     "default": {
-      "web": ".next/server/pages/index.html"
+      "web": ".next/server/pages/index.js"
     }
   }
 }
