@@ -6,7 +6,6 @@ import Head from "next/head";
 
 import "react-toastify/dist/ReactToastify.css";
 
-
 const Home: NextPage = () => {
   const notify = () =>
     toast("🦄 Wow so easy!");
