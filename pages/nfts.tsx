@@ -1,5 +1,6 @@
 import { useWallet } from "../hooks/useWallet";
 import { useNfts } from "../hooks/useNfts";
+import { NftList } from "../components/nft/NftList";
 
 const Nfts = () => {
   const wallet = useWallet()
@@ -9,9 +10,12 @@ const Nfts = () => {
   console.log(nfts);
   
   return (
-    <div>
-      nfts
-    </div>
+    <div className="h-full relative mb-40">
+      <section className="my-5 ">
+        <h1 className="text-4xl font-bold mb-16">Your NFTs</h1>
+        <NftList />
+      </section>
+  </div>
   )
 }
 

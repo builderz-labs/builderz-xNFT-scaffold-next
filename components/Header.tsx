@@ -1,7 +1,6 @@
 import { useMemo } from 'react';
 import { FaChevronLeft } from 'react-icons/fa';
 import styled from 'styled-components';
-import Image from 'next/image';
 import { useRouter } from 'next/router';
 import { Logo } from './Logo';
 
@@ -27,7 +26,7 @@ export default function Header() {
 
   return (
     <MyHeader className="w-full h-fit">
-      <div className="h-14 flex justify-between items-center gap-1 p-2">
+      <div className="h-14 flex justify-between items-center gap-1 p-2 bg-slate-200">
         <div className="flex items-center gap-4">
           {!basePaths.some(base => router.pathname === base) && (
             <button onClick={() => router.back()}>
