@@ -21,8 +21,8 @@ export function Tabs() {
           return (
             <Link key={tab.path} href={tab.path}>
               <div
-                className={`flex-1 w-20 px-2 py-1 m-4 hover:text-[#E6813E] rounded-2xl ${isActive
-                  ? "text-black bg-[#E6813E] hover:text-white"
+                className={`flex-1 w-20 px-2 py-1 m-4 hover:text-builderz-blue rounded-2xl ${isActive
+                  ? "text-builderz-blue "
                   : "text-gray-500"
                   }`}
               >

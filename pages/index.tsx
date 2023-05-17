@@ -49,7 +49,7 @@ const Home: NextPage = () => {
               Explore what you can do with Builderz&rsquo; brand new{" "}
               <b>Builderz xNFT Scaffold</b>
             </p>
-            <div className="flex flex-row gap-4 justify-around  items-center py-8">
+            <div className="flex flex-row gap-4 justify-around  items-center py-1">
               <button onClick={notify} className="btn ">
                 Notify!
               </button>

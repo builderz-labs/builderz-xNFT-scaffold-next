@@ -12,7 +12,7 @@ export const NftList = () => {
   const [currentNfts, setCurrentNfts] = useState<any[]>([]);
   const [selectedItems, setSelectedItems] = useState<any[]>([]);
 
-  const handleCheck = (nftId: string) => {    
+  const handleCheck = (nftId: string) => {
     setSelectedItems((currentItems) => {
       if (currentItems.includes(nftId)) {
         return currentItems.filter((id: string) => id !== nftId);
@@ -20,8 +20,8 @@ export const NftList = () => {
         return [...currentItems, nftId];
       }
     });
-  };  
-  
+  };
+
   // Populate state as soon as checkedNfts is available
   useEffect(() => {
     if (nfts.nfts.length) {
@@ -71,8 +71,8 @@ export const NftList = () => {
             <NftItem
               key={nft.id}
               nft={nft}
-              isSelected={selectedItems.includes(nft.id)}
-              onClick={() => handleCheck(nft.id)}
+            // isSelected={selectedItems.includes(nft.id)}
+            // onClick={() => handleCheck(nft.id)}
             />
           );
         })}
