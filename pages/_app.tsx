@@ -1,34 +1,7 @@
-import { Component, ReactNode } from 'react';
-
-interface Props {
-  children: ReactNode;
-}
-
-class ErrorBoundary extends Component<Props> {
-  state = { hasError: false, error: null };
-
-  static getDerivedStateFromError(error: any) {
-    return { hasError: true, error };
-  }
-
-  componentDidCatch(error: any, errorInfo: any) {
-    console.log("Uncaught error:", error, errorInfo);
-  }
-
-  render() {
-    if (this.state.hasError) {
-      // Optionally, you can render a fallback UI
-      return <h1>An error occurred</h1>;
-    }
-
-    return this.props.children;
-  }
-}
-
 import type { AppProps } from "next/app";
 import "../styles/globals.css";
 import 'react-toastify/dist/ReactToastify.css'
-
+import ErrorBoundary from '../components/ErrorBoundary';
 import { ThemeProvider } from "@mui/material/styles";
 import CssBaseline from "@mui/material/CssBaseline";
 import { useState } from "react";
