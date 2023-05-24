@@ -28,8 +28,9 @@ const Home: NextPage = () => {
                 {" "}
                 <Image
                   src="/builderz-white.svg"
-                  height={160}
-                  width={150}
+                  height='160'
+                  width='150'
+                  priority
                   style={{
                     objectFit: "contain",
                   }}
