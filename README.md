@@ -1,6 +1,6 @@
-# Builderz Solana dApp Scaffold (Nextjs13, Typescript, TailwindCSS, MaterialUI, web3.js)
+# Builderz Solana xNFT Scaffold (Nextjs13, Typescript, TailwindCSS, MaterialUI, web3.js)
 
-This is our open source [Next.js](https://nextjs.org/) , [Solana](https://github.com/solana-labs ) dApp Scaffold for the community and whole ecosystem - without much fluff and just the essentials. 💪
+This is our open source [Next.js](https://nextjs.org/) , [Solana](https://github.com/solana-labs ) xNFT Backpack Scaffold for the community and whole ecosystem - without much fluff and just the essentials. 💪
 
 Feel free to use it as a starting point for your next Solana project - we will and already use it for our developments.
 
