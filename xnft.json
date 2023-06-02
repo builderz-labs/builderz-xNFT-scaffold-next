@@ -6,20 +6,15 @@
   "kind": "app",
   "storage": "ipfs",
   "icon": {
-    "md": "./assets/icon.png"
+    "md": "./assets/builderz-logo.png"
   },
   "contact": "https://twitter.com/builderz__",
   "tag": "nfts",
   "programIds": ["9ZskGH9wtdwM9UXjBq1KDwuaLfrZyPChz41Hx7NWhTFf"],
-  "screenshots": [
-    "./assets/screenshot1.png",
-    "./assets/screenshot2.png",
-    "./assets/screenshot3.png",
-    "./assets/screenshot4.png"
-  ],
+  "screenshots": ["./assets/screenshot1.png"],
   "entrypoints": {
     "default": {
-      "web": ".next/server/pages/index.js"
+      "web": ".next/server/pages/index.html"
     }
   }
 }
