@@ -1,7 +1,7 @@
 import { useConnection } from "@solana/wallet-adapter-react";
 import { useEffect, useState } from "react";
-import { getAssetsByOwner } from "../utils/nfts";
-import { useWallet } from "./useWallet";
+import { getAssetsByOwner } from "@utils/nfts";
+import { useWallet } from "@hooks/useWallet";
 import axios from "axios";
 
 export const useNfts = (reload?: number) => {

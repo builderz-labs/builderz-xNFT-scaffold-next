@@ -1,5 +1,6 @@
-import { useRouter } from 'next/router';
+'use client'
 import Link from 'next/link';
+import { usePathname } from 'next/navigation';
 import { FaHome, FaImage } from "react-icons/fa";
 import { RiVipCrownLine } from "react-icons/ri";
 
@@ -11,13 +12,13 @@ const tabs = [
 ];
 
 export function Tabs() {
-  const router = useRouter();
+  const pathname = usePathname();
 
   return (
     <nav className="w-full fixed bottom-0 z-[999] h-fit bg-black">
       <div role="tablist" className="flex flex-row justify-center">
         {tabs.map((tab) => {
-          const isActive = router.pathname === tab.path;
+          const isActive = pathname === tab.path;
           return (
             <Link key={tab.path} href={tab.path}>
               <div

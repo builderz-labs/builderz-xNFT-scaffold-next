@@ -1,6 +1,7 @@
+'use client'
 import type { NextPage } from "next";
 import Image from "next/image";
-import styles from "../styles/Home.module.css";
+import styles from "@styles/Home.module.css";
 import { toast } from "react-toastify";
 import Head from "next/head";
 
@@ -44,13 +45,6 @@ const Home: NextPage = () => {
                   alt="builderz"
                 />
               </a>
-              <Image
-                width={75}
-                height={75}
-                src="/sol.png"
-                className={styles.icon}
-                alt="sol"
-              />
             </div>
             <h1 className={styles.h1}>Hello Solana, meet Builderz 👋</h1>
             <p className={styles.explain}>
