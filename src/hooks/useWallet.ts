@@ -10,9 +10,9 @@ const initialWalletState: WalletContextState = {
   connecting: false,
   connected: false,
   disconnecting: false,
-  select: (walletName: null) => {},
-  connect: () => new Promise((resolve, reject) => {}),
-  disconnect: () => new Promise((resolve, reject) => {}),
+  select: (walletName: null) => { },
+  connect: () => new Promise((resolve, reject) => { }),
+  disconnect: () => new Promise((resolve, reject) => { }),
   sendTransaction(
     _transaction: VersionedTransaction | Transaction,
     _connection: Connection,
@@ -23,6 +23,7 @@ const initialWalletState: WalletContextState = {
   signTransaction: undefined,
   signAllTransactions: undefined,
   signMessage: undefined,
+  signIn: undefined
 };
 
 export const useWallet = () => {
