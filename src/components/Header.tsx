@@ -1,8 +1,9 @@
+'use client'
 import { useMemo } from 'react';
 import { FaChevronLeft } from 'react-icons/fa';
 import styled from 'styled-components';
-import { useRouter } from 'next/router';
-import { Logo } from './Logo';
+import { useRouter, usePathname, useSearchParams } from 'next/navigation'
+import { Logo } from '@components/Logo';
 
 const basePaths = ['/']; // Add more paths here if needed
 
@@ -12,24 +13,25 @@ const MyHeader = styled.header`
 
 export default function Header() {
   const router = useRouter();
+  const pathname = usePathname();
   const title = useMemo(() => {
-    if (router.pathname !== '/') {
-      const segments = router.pathname.split('/');
-      return router.pathname.split('/')[segments.length - 1].replace('%20', " ");
+    if (pathname !== '/') {
+      const segments = pathname!.split('/');
+      return pathname!.split('/')[segments.length - 1].replace('%20', " ");
     }
     return (
       <div className="flex items-center">
         <Logo />
       </div>
     );
-  }, [router.pathname]);
+  }, [pathname]);
 
   return (
     <MyHeader className="w-full h-fit">
       <div className="h-14 flex justify-between items-center gap-1 p-2 bg-slate-200">
         <div className="flex items-center gap-4">
-          {!basePaths.some(base => router.pathname === base) && (
-            <button onClick={() => router.back()}>
+          {!basePaths.some(base => pathname === base) && (
+            <button type='button' title='Back' onClick={() => router.back()}>
               <FaChevronLeft />
             </button>
           )}

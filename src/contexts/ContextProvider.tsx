@@ -1,3 +1,4 @@
+'use client'
 import {
   ConnectionProvider,
 } from "@solana/wallet-adapter-react";
