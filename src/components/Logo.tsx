@@ -9,7 +9,7 @@ export const Logo = () => {
   return (
     <Link href="/" passHref>
       <Image
-        src={theme.palette.mode === "light" ? '/builderz-white.svg' : '/builderz-black.svg'}
+        src='/builderz-black.svg'
         alt=""
         className="min-w-[30px] w-32 max-w-[200px] cursor-pointer"
         width={100}

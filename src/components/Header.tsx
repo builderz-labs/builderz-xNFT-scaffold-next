@@ -28,7 +28,7 @@ export default function Header() {
 
   return (
     <MyHeader className="w-full h-fit">
-      <div className="h-14 flex justify-between items-center gap-1 p-2 bg-slate-200">
+      <div className="h-14 flex justify-between items-center gap-1 bg-white shadow-2xl border-b border-b-gray-800 p-2 border-b-0.5">
         <div className="flex items-center gap-4">
           {!basePaths.some(base => pathname === base) && (
             <button type='button' title='Back' onClick={() => router.back()}>
