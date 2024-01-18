@@ -2,13 +2,13 @@
   "name": "xNFT",
   "version": "0.0.1",
   "description": "xNFT description",
-  "website": "https://twitter.com/builderz__",
+  "website": "https://twitter.com/builderzdotdev",
   "kind": "app",
   "storage": "ipfs",
   "icon": {
     "md": "./assets/builderz-logo.png"
   },
-  "contact": "https://twitter.com/builderz__",
+  "contact": "https://twitter.com/builderzdotdev",
   "tag": "nfts",
   "programIds": ["9ZskGH9wtdwM9UXjBq1KDwuaLfrZyPChz41Hx7NWhTFf"],
   "screenshots": ["./assets/screenshot1.png"],

@@ -15,7 +15,7 @@ export function Tabs() {
   const pathname = usePathname();
 
   return (
-    <nav className="w-full fixed bottom-0 z-[999] h-fit bg-black">
+    <nav className="w-full fixed bottom-12 z-[999] h-fit bg-white border-t border-t-0.5 border-t-gray-800 shadow-2xl">
       <div role="tablist" className="flex flex-row justify-center">
         {tabs.map((tab) => {
           const isActive = pathname === tab.path;
