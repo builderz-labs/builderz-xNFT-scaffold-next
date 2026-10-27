@@ -18,7 +18,7 @@
     "@nextui-org/react": "^1.0.0-beta.10",
     "@solana/wallet-adapter-react": "^0.15.32",
     "@solana/web3.js": "^1.66.2",
-    "axios": "^1.4.0",
+    "axios": "^1.20.0",
     "bigint-buffer": "^1.1.5",
     "daisyui": "^2.42.0",
     "encoding": "^0.1.13",
