@@ -15,7 +15,7 @@
     "@mui/icons-material": "^5.10.15",
     "@mui/material": "^5.10.15",
     "@mui/styled-engine-sc": "^5.10.14",
-    "@nextui-org/react": "^1.0.0-beta.10",
+    "@nextui-org/react": "^2.6.11",
     "@solana/wallet-adapter-react": "^0.15.32",
     "@solana/web3.js": "^1.66.2",
     "axios": "^1.4.0",
